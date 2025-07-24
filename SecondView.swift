@@ -9,10 +9,16 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
-        Text("You've arrived to the second view!")
+        NavigationStack {
+            VStack {
+                Text("Learn more about us!")
+                
+            }
+        }
     }
 }
-
+    
 #Preview {
-    SecondView()
-}
+        SecondView()
+    }
+
