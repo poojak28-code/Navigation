@@ -11,7 +11,7 @@ struct SecondView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Learn more about us!")
+                Text("This is the second view!")
                 
             }
         }

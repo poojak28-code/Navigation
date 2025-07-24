@@ -12,12 +12,24 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("This is the root view 🌳")
-                NavigationLink(destination: SecondView()) {
-                    Text("Click me!")
-                    NavigationLink(destination: ThirdView()) {
+                VStack{
+                    NavigationLink(destination: SecondView()) {
+                        Text("Click me!")
+                    }
+                NavigationLink(destination: HomeView()) {
+                        Text("Home")
+                        }
+                NavigationLink(destination: AboutView()) {
                         Text("About")
                     }
+                NavigationLink(destination: ThirdView()) {
+                        Text("Contact")
+                        }
+                NavigationLink(destination: FourthView()) {
+                        Text("Help")
+                            }
                 }
+                    
                 .navigationTitle("Home")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(true)
